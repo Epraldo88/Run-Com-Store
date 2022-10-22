@@ -1,0 +1,559 @@
+:root {
+	--Title: "Times New Roman", Times, serif;
+	--Gray-bg: #eef1f8;
+	--Primary: #3db290;
+	--Secondary: #f19419;
+
+	--Times: "Times New Roman", Times, serif;
+	--Typography: #444444;
+	--Btn-font-size: 18px;
+}
+
+* {
+	font-family: "Raleway", sans-serif;
+	font-weight: 500;
+	color: var(--Typography);
+}
+
+p {
+	line-height: 1.6;
+}
+
+.btn-white {
+	font-family: var(--Times);
+	font-weight: 600;
+	font-size: var(--Btn-font-size);
+	color: var(--Primary);
+	background: #fff;
+	border: 2px solid;
+	border-color: var(--Primary);
+	border-radius: 0;
+	padding: 10px 20px;
+
+	&:hover {
+		color: #ffffff;
+		background-color: var(--Primary);
+		border-color: var(--Primary);
+	}
+}
+
+.btn-green {
+	font-family: var(--Times);
+	font-weight: 600;
+	font-size: var(--Btn-font-size);
+	color: #ffffff;
+	border: 2px solid var(--Primary);
+	border-radius: 0;
+	padding: 10px 20px;
+	background-color: var(--Primary);
+
+	&:hover {
+		background: #48c4a0;
+		border: 2px solid;
+		border-color: #48c4a0;
+		color: #ffffff;
+	}
+}
+
+// ============== Home Page ==============
+// Navbar Section
+#navbar {
+	a {
+		color: #fff;
+	}
+	i {
+		color: #fff;
+	}
+}
+
+// Jumbotron Section
+#jumbotron {
+	background-color: var(--Gray-bg);
+
+	h1 {
+		font-family: var(--Times);
+		font-weight: 700;
+		font-size: 60px;
+		color: var(--Primary);
+	}
+
+	p {
+		font-size: 18px;
+		margin: 24px 0px;
+	}
+
+	a {
+		text-decoration: none;
+		color: var(--Primary);
+		i {
+			color: var(--Primary);
+		}
+	}
+}
+
+// Collection Section
+#collection {
+	h1.collection-title {
+		font-family: var(--Times);
+		font-weight: 600;
+		font-size: 56px;
+	}
+	.card-section {
+		margin-top: 4rem;
+		.card {
+			border: none;
+			margin-bottom: 2rem;
+
+			padding-top: 2rem;
+			padding-bottom: 2rem;
+			.card-body {
+				.card-title {
+					font-family: var(--Times);
+				}
+				.card-text {
+					color: var(--Primary);
+					font-weight: 600;
+					font-size: 18px;
+
+					.small-zero {
+						color: var(--Primary);
+						font-weight: 600;
+						font-size: 14px;
+					}
+				}
+				.star-rate {
+					color: #ffd000;
+				}
+			}
+
+			.layer {
+				background: rgba(68, 68, 68, 0.5);
+				width: 0%;
+				height: 0%;
+				left: 50%;
+				bottom: 50%;
+				position: absolute;
+				overflow: hidden;
+
+				transition: height 0.3s, width 0.3s, left 0.3s, bottom 0.3s;
+
+				.ic-collection-product {
+					color: #444444;
+					background: #ffffff;
+					font-size: 20px;
+
+					width: 60px;
+					height: 60px;
+					left: 25px;
+					top: 25px;
+
+					transition: background 0.3s, color 0.1s;
+
+					&:hover {
+						background: var(--Primary);
+
+						i {
+							color: #ffffff;
+						}
+					}
+				}
+			}
+
+			&:hover .layer {
+				height: 100%;
+				width: 100%;
+				left: 0;
+				bottom: 0;
+			}
+		}
+	}
+}
+
+// Favourite-1 Section
+#favourite-1 {
+	background-color: var(--Gray-bg);
+
+	h1 {
+		font-family: var(--Times);
+		font-weight: 700;
+		font-size: 60px;
+	}
+
+	p {
+		font-size: 18px;
+		margin: 24px 0px;
+	}
+}
+
+// Article Section
+#article {
+	// img {
+	// 	width: 100%;
+	// }
+	h1 {
+		font-family: var(--Times);
+		font-weight: 700;
+		font-size: 56px;
+	}
+
+	.card-section {
+		.card {
+			border-radius: 0;
+			border: none;
+
+			img {
+				border-radius: 0;
+				width: 100%;
+				overflow: hidden;
+			}
+
+			.time-mark {
+				color: #ffffff;
+				background: var(--Primary);
+
+				width: 60px;
+				height: 60px;
+				position: absolute;
+				left: 25px;
+				top: 25px;
+
+				p {
+					margin: 0;
+					font-family: var(--Times);
+					font-size: 16px;
+					font-weight: 700;
+					color: #ffffff;
+					line-height: normal;
+				}
+			}
+
+			h5 {
+				font-family: var(--Times);
+				font-weight: 600;
+				font-size: 24px;
+			}
+
+			a {
+				text-decoration: none;
+				font-size: 18px;
+				font-weight: 600;
+				font-family: var(--Times);
+				color: var(--Primary);
+			}
+		}
+	}
+}
+
+#favourite-2 {
+	background-color: var(--Gray-bg);
+
+	h1 {
+		font-family: var(--Times);
+		font-weight: 700;
+		font-size: 60px;
+	}
+
+	p {
+		font-size: 18px;
+		margin: 24px 0px;
+
+		i {
+			color: #ffd000;
+		}
+	}
+}
+
+#footer {
+	h5 {
+		color: var(--Typography);
+		font-family: var(--Times);
+		font-weight: 600;
+	}
+
+	ul {
+		li {
+			font-size: 14px;
+			line-height: 1.6rem;
+
+			a {
+				text-decoration: none;
+				color: var(--Typography);
+				&:hover {
+					color: #929292;
+
+					i {
+						color: #929292;
+					}
+				}
+			}
+		}
+	}
+}
+
+#copyright {
+	background: #000000;
+	p {
+		font-family: var(--Times);
+		color: #dadada;
+	}
+	a {
+		font-family: var(--Times);
+		color: #dadada;
+		text-decoration: none;
+		position: relative;
+
+		i {
+			color: #dadada;
+		}
+
+		&::after {
+			content: "";
+			width: 100%;
+			height: 1px;
+			background: #dadada;
+			position: absolute;
+			left: 0;
+			bottom: 15px;
+		}
+	}
+}
+
+// ============== All Product Page ==============
+
+// Page Title Section
+#jumbotron-text {
+	background: #f7f7f7;
+
+	h1 {
+		font-family: var(--Times);
+		font-weight: 700;
+		font-size: 60px;
+	}
+
+	span {
+		font-family: var(--Times);
+		font-size: 18px;
+		font-weight: 600;
+	}
+
+	p {
+		font-family: var(--Times);
+		font-size: 16px;
+	}
+}
+
+// Collection All Product Section
+#collection {
+	.filter {
+		p {
+			font-family: var(--Times);
+			display: inline;
+			margin-right: 20px;
+			font-weight: 600;
+		}
+
+		select {
+			color: #444444;
+			padding: 4px 7px;
+			border-color: #444444;
+			border-radius: 4px;
+			font-family: var(--Times);
+
+			option {
+				font-family: var(--Times);
+			}
+		}
+	}
+}
+
+// Your Cart Section
+#your-cart {
+	.table {
+		thead {
+			background: #f7f7f7;
+			border-bottom: hidden;
+			th {
+				font-weight: 600;
+				font-family: var(--Times);
+				font-size: 20px;
+				padding: 20px 0;
+			}
+		}
+
+		tbody {
+			tr {
+				th,
+				td {
+					font-weight: 600;
+					font-family: var(--Times);
+					font-size: 16px;
+
+					input[type="number"]::-webkit-inner-spin-button {
+						opacity: 1;
+					}
+					input {
+						text-align: center;
+						border: 1px solid;
+						border-color: #9b9d9e;
+						padding: 5px 5px;
+					}
+				}
+
+				.cart-product-size {
+					color: var(--Primary);
+				}
+
+				.cart-product-price {
+					color: var(--Primary);
+				}
+			}
+		}
+	}
+}
+
+#input-form {
+	h3 {
+		font-family: var(--Times);
+		font-weight: 600;
+	}
+	input {
+		padding: 10px 20px;
+		border-radius: 0;
+		font-family: var(--Times);
+		font-size: 1rem;
+	}
+
+	.cart-total-price {
+		th,
+		td,
+		span {
+			font-family: var(--Times);
+			font-size: 1rem;
+			font-weight: 600;
+		}
+
+		h5 {
+			margin-top: 2rem;
+			font-family: var(--Times);
+			font-size: 1.5rem;
+			font-weight: 600;
+			color: var(--Primary);
+		}
+	}
+}
+
+// Checkout Page
+// Checkout Reminder Section
+#checkout-reminder {
+	.alert {
+		background: #f7f7f7;
+		border-radius: 0;
+		border: 1px solid #cbcbcb;
+
+		strong {
+			font-family: var(--Times);
+			font-size: 18px;
+			font-weight: 600;
+
+			a {
+				font-family: var(--Times);
+				font-weight: 600;
+				color: var(--Primary);
+				text-decoration: none;
+			}
+		}
+	}
+
+	p {
+		line-height: 2.3;
+		text-align: justify;
+
+		margin: 35px 0px;
+	}
+
+	.input-group {
+		input,
+		button {
+			font-family: var(--Times);
+			padding-left: 20px;
+			border-radius: 0;
+		}
+	}
+
+	.input-coupon {
+		margin: 40px 0px;
+	}
+}
+
+// Form Billing Address Section
+#form-billing-address {
+	.title {
+		font-family: var(--Times);
+		font-size: 20px;
+		font-weight: 600;
+	}
+
+	.billing-address-field {
+		input {
+			border-radius: 0;
+			font-family: var(--Times);
+			margin-top: 25px;
+		}
+	}
+
+	label {
+		font-family: var(--Times);
+		font-size: 18;
+		margin-left: 8px;
+	}
+
+	.form-message {
+		.address-check {
+			position: relative;
+			top: -20px;
+		}
+
+		.message-field {
+			border-radius: 0;
+			font-family: var(--Times);
+		}
+	}
+
+	table {
+		th,
+		td,
+		span {
+			font-family: var(--Times);
+			font-size: 1rem;
+			font-weight: 600;
+		}
+
+		select {
+			font-weight: 600;
+			border: none;
+
+			option {
+				font-family: var(--Times);
+			}
+		}
+	}
+
+	h5 {
+		margin-top: 1.5rem;
+		font-family: var(--Times);
+		font-size: 1.25rem;
+		font-weight: 600;
+		color: var(--Primary);
+	}
+
+	ul {
+		li {
+			border-radius: 0;
+
+			.payment-text {
+				font-family: var(--Times);
+				margin-top: 0.75rem;
+			}
+		}
+	}
+}

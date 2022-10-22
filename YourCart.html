@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Runcom - Your Cart</title>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+		<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+		<script src="https://kit.fontawesome.com/ef55759827.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="Style.css" />
+	</head>
+	<body>
+		<!-- Navbar Section -->
+		<section id="navbar">
+			<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+				<div class="container">
+					<a class="navbar-brand" href="#">Navbar</a>
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarNav">
+						<ul class="navbar-nav ms-auto">
+							<li class="nav-item">
+								<a class="nav-link" aria-current="page" href="#">Men</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Women</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Kid</a>
+							</li>
+
+							<li class="nav-item">
+								<a class="nav-link me-3" href="#"><i class="bi bi-cart"></i></a>
+							</li>
+							<form class="d-flex" role="search">
+								<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+								<button class="btn btn-outline-light" type="submit">Search</button>
+							</form>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</section>
+
+		<!-- Navbar End Section -->
+
+		<!-- Jumbotron Section -->
+		<section id="jumbotron-text" class="pt-5">
+			<div class="container py-5">
+				<div class="row text-center align-items-center py-5">
+					<h1>Your Cart</h1>
+					<p>See all the best quality product you just add to your cart!</p>
+				</div>
+			</div>
+			<hr />
+		</section>
+
+		<!-- Jumbotron End Section -->
+
+		<!-- Cart Product Section -->
+		<section id="your-cart">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<table class="table mb-0">
+							<thead>
+								<tr class="text-center">
+									<th scope="col" colspan="2" width="45%">Image</th>
+									<th scope="col">Size</th>
+									<th scope="col">Price</th>
+									<th scope="col">Quantity</th>
+									<th scope="col">Total</th>
+									<th></th>
+								</tr>
+							</thead>
+							<tbody class="align-middle text-center">
+								<tr>
+									<th scope="row" class="text-start cart-product-image py-5" width="10%">
+										<img src="Asset/1.png" class="cart-product-img" alt="Shoes" height="100px" />
+									</th>
+									<td class="text-start" width="35%">Mekerren Chlor Shoes</td>
+									<td class="cart-product-size">M</td>
+									<td class="cart-product-price">$220.00</td>
+									<td>
+										<input type="number" id="quantity" value="2" name="quantity" min="1" max="1000" />
+									</td>
+									<td>$440.00</td>
+									<td><i class="bi bi-x-lg"></i></td>
+								</tr>
+								<tr>
+									<th scope="row" class="text-start cart-product-image py-5" width="10%">
+										<img src="Asset/2.png" class="cart-product-img" alt="Shoes" height="100px" />
+									</th>
+									<td class="text-start" width="35%">Flynkit Racer</td>
+									<td class="cart-product-size">XL</td>
+									<td class="cart-product-price">$300.00</td>
+									<td>
+										<input type="number" id="quantity" value="3" name="quantity" min="1" max="1000" />
+									</td>
+									<td>$900.00</td>
+									<td><i class="bi bi-x-lg"></i></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Cart Product End Section -->
+
+		<section id="input-form">
+			<div class="container mb-5">
+				<div class="row btn-row my-5">
+					<div class="col-md-5">
+						<div class="input-group">
+							<input type="text" class="input-coupon-field form-control" placeholder="Your coupon code" size="30%" />
+							<button class="btn btn-green ms-3 px-5 py-2" type="button">Apply</button>
+						</div>
+					</div>
+					<div class="col-md-5 ms-auto">
+						<div class="d-flex">
+							<button class="btn btn-white px-5 py-2 flex-fill" type="button">Update Cart</button>
+							<a href="Checkout.html"><button class="btn btn-green px-5 py-2 ms-3 flex-fill" type="button">Proceed To Check Out</button></a>
+						</div>
+					</div>
+				</div>
+				<hr />
+				<div class="row mt-5 pb-5">
+					<div class="col-md-4">
+						<h3>Calculate Shipping</h3>
+						<form>
+							<input type="text" class="form-control mt-3" placeholder="City" />
+							<input type="text" class="form-control mt-3" placeholder="State / Country" />
+							<input type="text" class="form-control mt-3" placeholder="Postcode / Zip" />
+							<button class="btn btn-green mt-4 px-5 py-2" type="button">Update Total</button>
+						</form>
+					</div>
+
+					<div class="col-md-4 ms-auto cart-total-price">
+						<h3>Cart Totals:</h3>
+						<hr />
+						<table class="table table-borderless">
+							<tr>
+								<th width="50%">Subtotal:</th>
+								<td width="50%" class="text-end">$1,340.00</td>
+							</tr>
+							<tr>
+								<th width="50%">Shipping and Handling:</th>
+								<td width="50%" class="text-end">
+									<select name="shiping-opt" id="shipping-opt">
+										<option value="free-shipping">Free Shipping</option>
+										<option value="express-shipping">Express Shipping</option>
+										<option value="instant-shipping">Instant Shipping</option>
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<th width="50%">Tax</th>
+								<td width="50%" class="text-end">$50.00</td>
+							</tr>
+							<tr>
+								<th width="50%">Order Total</th>
+								<td width="50%" class="text-end">$1,390.00</td>
+							</tr>
+							<tr>
+								<th width="50%">Discount</th>
+								<td width="50%" class="text-end">
+									<span class="text-discount"> $228.00 </span>
+								</td>
+							</tr>
+						</table>
+						<hr />
+						<h5 class="text-end">Total: $1,618.00</h5>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Footer Section -->
+		<section id="footer">
+			<hr />
+			<div class="container pt-5 pb-5">
+				<div class="row justify-content-center">
+					<div class="col-12">
+						<div class="row">
+							<div class="col-12 col-lg-3">
+								<h5>Company</h5>
+								<ul class="list-unstyled">
+									<li><a href="#">About</a></li>
+									<li><a href="#">Our Shops</a></li>
+									<li><a href="#">News</a></li>
+									<li><a href="#">Delivery</a></li>
+								</ul>
+							</div>
+							<div class="col-12 col-lg-3">
+								<h5>Help</h5>
+								<ul class="list-unstyled">
+									<li><a href="#">Contact us</a></li>
+									<li><a href="#">FAQ</a></li>
+									<li><a href="#">Help</a></li>
+									<li><a href="#">Terms</a></li>
+								</ul>
+							</div>
+							<div class="col-12 col-lg-3">
+								<h5>Get Social</h5>
+								<ul class="list-unstyled">
+									<li>
+										<a href="#"><i class="bi bi-facebook me-2"></i>Facebook</a>
+									</li>
+									<li>
+										<a href="#"><i class="bi bi-twitter me-2"></i>Twitter</a>
+									</li>
+									<li>
+										<a href="#"><i class="bi bi-instagram me-2"></i>Instagram</a>
+									</li>
+								</ul>
+							</div>
+							<div class="col-12 col-lg-3">
+								<h5>Contact</h5>
+								<ul class="list-unstyled">
+									<li>7/4 Fire Briagde Road</li>
+									<li>Khulna. 9100. Bangladesh</li>
+									<li><b>Phone</b>: 123-456-789</li>
+									<li><b>Email</b>: Support@domain.com</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Footer End Section -->
+
+		<!-- Copyright Section -->
+		<section id="copyright">
+			<div class="container pt-5 pb-2">
+				<div class="d-flex justify-content-between mb-3">
+					<p>Copyright 2016. All Rights Reserved</p>
+					<a href="#">Subscribe to our newsletter <i class="bi bi-arrow-right ms-3"></i></a>
+				</div>
+			</div>
+		</section>
+		<!-- Copyright End Section -->
+
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+	</body>
+</html>

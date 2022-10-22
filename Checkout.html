@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Runcom - Checkout</title>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+		<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+		<script src="https://kit.fontawesome.com/ef55759827.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="Style.css" />
+	</head>
+	<body>
+		<!-- Navbar Section -->
+		<section id="navbar">
+			<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+				<div class="container">
+					<a class="navbar-brand" href="#">Navbar</a>
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarNav">
+						<ul class="navbar-nav ms-auto">
+							<li class="nav-item">
+								<a class="nav-link" aria-current="page" href="#">Men</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Women</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Kid</a>
+							</li>
+
+							<li class="nav-item">
+								<a class="nav-link me-3" href="#"><i class="bi bi-cart"></i></a>
+							</li>
+							<form class="d-flex" role="search">
+								<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+								<button class="btn btn-outline-light" type="submit">Search</button>
+							</form>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</section>
+
+		<!-- Navbar End Section -->
+
+		<!-- Jumbotron Section -->
+		<section id="jumbotron-text" class="pt-5">
+			<div class="container py-5">
+				<div class="row text-center align-items-center py-5">
+					<h1>Checkout</h1>
+					<p>Last step to have the goods come to your hand!</p>
+				</div>
+			</div>
+			<hr />
+		</section>
+
+		<!-- Jumbotron End Section -->
+
+		<!-- Reminder Section -->
+		<section id="checkout-reminder">
+			<div class="container">
+				<div class="row my-5 py-5">
+					<div class="col-md-6">
+						<div class="alert">
+							<strong>Returning customer? <a href="#">Click here to login</a></strong>
+						</div>
+						<p>If you have shopped with us before, pleaase enter your details in the boxes below. If you are a new customer please proceed to the Billing and & Shipping section.</p>
+						<div class="input-group">
+							<input type="text" class="form-control" placeholder="Username" />
+							<input type="text" class="form-control ms-3" placeholder="Password" />
+							<button class="btn btn-green ms-3 px-5 py-2" type="button">Login</button>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="alert">
+							<strong>Have a coupon? <a href="#">Click here to enter your code</a></strong>
+						</div>
+						<div class="input-group input-coupon">
+							<input type="text" class="form-control" placeholder="Your coupon code" />
+							<button class="btn btn-green ms-3 px-5 py-2" type="button">Apply</button>
+						</div>
+					</div>
+				</div>
+				<hr />
+			</div>
+		</section>
+		<!-- Reminder End Section -->
+
+		<!-- Input Form Section -->
+		<section id="form-billing-address">
+			<div class="container mb-5">
+				<div class="row mt-5 pb-5 billing-address-field">
+					<div class="col-md-6">
+						<h6 class="title">Billing Address:</h6>
+						<form action="#" class="">
+							<input type="text" class="form-control" placeholder="City" />
+							<div class="input-group">
+								<input type="text" class="form-control" placeholder="First Name" />
+								<input type="text" class="form-control ms-3" placeholder="Last Name" />
+							</div>
+							<input type="text" class="form-control" placeholder="Company" />
+							<input type="text" class="form-control" placeholder="Address" />
+							<input type="text" class="form-control" placeholder="City / Town" />
+							<div class="input-group">
+								<input type="text" class="form-control" placeholder="State / Country" />
+								<input type="text" class="form-control ms-3" placeholder="Phone" />
+							</div>
+							<input type="checkbox" name="create-account" value="create" />
+							<label for="create-account"> Create an account</label><br />
+						</form>
+					</div>
+					<div class="col-md-6">
+						<div class="form-message mb-0">
+							<input type="checkbox" style="border: 1px solid" class="address-check" id="diff-address" name="diff-address" value="something" />
+							<label class="align-top fw-bold" for="diff-address">Ship to a different address?</label>
+							<textarea class="form-control message-field" placeholder="Message" rows="5" id="message" name="text"></textarea>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col ms-auto cart-total-price">
+						<h3 class="title">Cart Totals:</h3>
+						<hr />
+						<table class="table table-borderless">
+							<tr>
+								<th width="50%">Subtotal:</th>
+								<td width="50%" class="text-end">$710.00</td>
+							</tr>
+							<tr>
+								<th width="50%">Shipping and Handling:</th>
+								<td width="50%" class="text-end">
+									<select name="shiping-opt" id="shipping-opt">
+										<option value="free-shipping">Free Shipping</option>
+										<option value="express-shipping">Express</option>
+										<option value="instant-shipping">Instant</option>
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<th width="50%">Tax</th>
+								<td width="50%" class="text-end">$50.00</td>
+							</tr>
+							<tr>
+								<th width="50%">Order Total</th>
+								<td width="50%" class="text-end">$760,00</td>
+							</tr>
+							<tr>
+								<th width="50%">Discount</th>
+								<td width="50%" class="text-end">
+									<span class="text-discount"> $228.00 </span>
+								</td>
+							</tr>
+						</table>
+						<hr />
+						<h5 class="text-end">Total: $532.00</h5>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col my-5">
+						<ul class="list-group payment-selection">
+							<li class="list-group-item pt-4">
+								<div class="form-check">
+									<input type="radio" class="form-check-input" id="radio1" name="optradio" value="option2" />
+									<label class="form-check-label fw-bold" for="radio1">
+										Direct Bank Transfer <br />
+										<p class="payment-text">Make your payment directly into our bank account. Plaese use your Order ID as the payment reference. Your order won't be shipped until the funds have cleared in our account.</p>
+									</label>
+								</div>
+							</li>
+							<li class="list-group-item py-4">
+								<div class="form-check">
+									<input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2" />
+									<label class="form-check-label" for="radio2"> Cheque Payment </label>
+								</div>
+							</li>
+							<li class="list-group-item py-4">
+								<div class="form-check">
+									<input type="radio" class="form-check-input" id="radio3" name="optradio" value="option2" />
+									<label class="form-check-label" for="radio3"> Paypal </label>
+								</div>
+							</li>
+						</ul>
+						<button class="btn btn-green mt-4 px-5 py-2" type="button">Proceed to Checkout</button>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Input Form End Section -->
+
+		<!-- Footer Section -->
+		<section id="footer">
+			<hr />
+			<div class="container pt-5 pb-5">
+				<div class="row justify-content-center">
+					<div class="col-12">
+						<div class="row">
+							<div class="col-12 col-lg-3">
+								<h5>Company</h5>
+								<ul class="list-unstyled">
+									<li><a href="#">About</a></li>
+									<li><a href="#">Our Shops</a></li>
+									<li><a href="#">News</a></li>
+									<li><a href="#">Delivery</a></li>
+								</ul>
+							</div>
+							<div class="col-12 col-lg-3">
+								<h5>Help</h5>
+								<ul class="list-unstyled">
+									<li><a href="#">Contact us</a></li>
+									<li><a href="#">FAQ</a></li>
+									<li><a href="#">Help</a></li>
+									<li><a href="#">Terms</a></li>
+								</ul>
+							</div>
+							<div class="col-12 col-lg-3">
+								<h5>Get Social</h5>
+								<ul class="list-unstyled">
+									<li>
+										<a href="#"><i class="bi bi-facebook me-2"></i>Facebook</a>
+									</li>
+									<li>
+										<a href="#"><i class="bi bi-twitter me-2"></i>Twitter</a>
+									</li>
+									<li>
+										<a href="#"><i class="bi bi-instagram me-2"></i>Instagram</a>
+									</li>
+								</ul>
+							</div>
+							<div class="col-12 col-lg-3">
+								<h5>Contact</h5>
+								<ul class="list-unstyled">
+									<li>7/4 Fire Briagde Road</li>
+									<li>Khulna. 9100. Bangladesh</li>
+									<li><b>Phone</b>: 123-456-789</li>
+									<li><b>Email</b>: Support@domain.com</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Footer End Section -->
+
+		<!-- Copyright Section -->
+		<section id="copyright">
+			<div class="container pt-5 pb-2">
+				<div class="d-flex justify-content-between mb-3">
+					<p>Copyright 2016. All Rights Reserved</p>
+					<a href="#">Subscribe to our newsletter <i class="bi bi-arrow-right ms-3"></i></a>
+				</div>
+			</div>
+		</section>
+		<!-- Copyright End Section -->
+
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+	</body>
+</html>
